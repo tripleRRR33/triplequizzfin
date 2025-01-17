@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple R Quiz - Testez vos connaissances</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f6fa;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .start-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+
+            .categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Triple R Quiz</div>
+        <div class="tagline">Relevez, Réfléchissez, Réussissez !</div>
+    </header>
+
+    <main>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-icon">1️⃣</div>
+                <h2>Catégorie 1</h2>
+                <p>Description de la catégorie 1</p>
+                <a href="#" class="start-button">Commencer le quiz</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">2️⃣</div>
+                <h2>Catégorie 2</h2>
+                <p>etc etc</p>
+                <a href="#" class="start-button">Commencer le quiz</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">3️⃣</div>
+                <h2>Catégorie 3</h2>
+                <p>etc etc</p>
+                <a href="#" class="start-button">Commencer le quiz</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Triple R Quiz - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
