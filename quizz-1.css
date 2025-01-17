@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #800000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #4a4a4a;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progress {
+    background-color: #00ff00;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+#quiz-container {
+    margin: 20px 0;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#options button:hover {
+    background-color: #ff6347;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #32cd32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#next-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#explanation {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 14px;
+    color: #ccc;
+}
